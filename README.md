@@ -115,7 +115,7 @@ The nmap tool provides information from remote machines (`$ man nmap` for more i
         $ nmap -O <IP from remote machine>
     If you get a dnet error, run the following command first:
     
-        $ sudo snap connnect nmap:network-control
+        $ sudo snap connect nmap:network-control
        
 
 ## 2. Vulnerabilities in TCP/IP
