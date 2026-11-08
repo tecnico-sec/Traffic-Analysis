@@ -36,6 +36,14 @@ _Notes:_
 $ sudo /sbin/ip link set eth0 address 00:00:00:00:00:11
 ```
 
+Enable the Telnet server on VM3 and VM4:
+
+```bash
+sudo update-inetd --enable telnet
+sudo systemctl enable inetutils-inetd
+sudo systemctl restart inetutils-inetd
+```
+
 ## 1. Listening to the network
 
 We will experiment with three tools: _tcpdump_, _Wireshark_ and _nmap_.
