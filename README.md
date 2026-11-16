@@ -183,6 +183,7 @@ To change the ARP table of VM2, from VM3, run the following (in VM3):
 ```sh
 $ sudo packit -t ARP -a 1 -x 192.168.1.4  -y 192.168.1.254 -Y <MAC of machine 192.168.1.254/VM2> -X <MAC of machine 192.168.1.1/VM3>
 ```
+Note that in some recent versions of _packit_ _-a_ was replaced by _-A_ in some cases, you may also need to provide _-i_ followed by the network interface connected to the network router. 
 
 This command allows the injection of an ARP packet, and change the ARP table in VM2.
 It tells VM2 (`-y` and `-Y` options) that the MAC address associated with IP `192.168.1.4` (VM4) is `<MAC of machine 192.168.1.1/VM3>` (respectively `-x` and `-X` options).
